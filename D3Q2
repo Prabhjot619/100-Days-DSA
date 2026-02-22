@@ -1,0 +1,20 @@
+int missingNum(int *arr, int size) {
+
+
+int res=0;
+
+for(int i=1;i<=size+1;i++){
+    res^=i;
+}
+
+for(int i=0; i<size;i++){
+    res^=arr[i];
+}
+
+
+
+return res;
+
+
+
+} 
